@@ -4,14 +4,13 @@ function start() {
     const text_area = document.querySelector('#regexp')
     const inputlist = document.querySelectorAll('.sample-input')
     let buttons = document.querySelectorAll('.answer')
-    let text_area_sizes = [text_area.clientHeight, text_area.clientWidth]
     
     let hide_div_button = document.querySelector('#button')
     let hidden_div = document.querySelector('.menu')
     let page_space = document.querySelector('body')
 
     page_space.addEventListener('click', event => {
-        if (!hidden_div.classList.contains('menu_hide')) {
+        if (!hidden_div.classList.contains('menu_hide') && event.target != hide_div_button) {
             hidden_div.classList.toggle('menu_hide')
         }        
     })
