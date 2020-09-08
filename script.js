@@ -12,15 +12,6 @@ function start() {
         change_button_data(buttons[0], determine_button_color
             (text_area.clientHeight, parseInt(inputlist[0].value)),
             determine_button_text(text_area.clientHeight, parseInt(inputlist[0].value)))
-
-        
-        // if (text_area.clientHeight == parseInt(inputlist[0].value)) {
-        //     buttons[0].style.background = 'green'
-        //     buttons[0].textContent = 'Match!'
-        // } else {
-        //     buttons[0].style.background = 'palevioletred'
-        //     buttons[0].textContent = 'No match!'
-        // }
     })
     
     inputlist[1].addEventListener('input', event => {
@@ -29,16 +20,7 @@ function start() {
         change_button_data(buttons[1], determine_button_color
             (text_area.clientWidth, parseInt(inputlist[1].value)),
             determine_button_text(text_area.clientWidth, parseInt(inputlist[1].value)))
-
-        
-        // if (text_area.clientWidth == parseInt(inputlist[1].value)) {
-        //     buttons[1].style.background = 'green'
-        //     buttons[1].textContent = 'Match!'
-        // } else {
-        //     buttons[1].style.background = 'palevioletred'
-        //     buttons[1].textContent = 'No match!'
-        // }
-    })
+     })
 
     
     text_area.addEventListener('focus', (event) => {
@@ -55,22 +37,6 @@ function start() {
         change_button_data(buttons[1], determine_button_color
             (event.target.clientWidth, parseInt(inputlist[1].value)),
             determine_button_text(event.target.clientWidth, parseInt(inputlist[1].value)))
-    
-
-        // if (parseInt(inputlist[0].value) == event.target.clientHeight) {
-        //     buttons[0].style.background = 'green'
-        //     buttons[0].textContent = 'Match!'
-        // } else {
-        //     buttons[0].style.background = 'palevioletred'
-        //     buttons[0].textContent = 'No match!'
-        // }
-        // if (parseInt(inputlist[1].value) == event.target.clientWidth) {
-        //     buttons[1].style.background = 'green'
-        //     buttons[1].textContent = 'Match!'
-        // } else {
-        //     buttons[1].style.background = 'palevioletred'
-        //     buttons[1].textContent = 'No match!'
-        // }
     } )
 }
 
