@@ -1,0 +1,128 @@
+/*!important - команда, которую можно юзать, чтобы стиль применялся поверх остальных
+аналог - использовать несколько имен id или class
+Примеры - box-shadow: 5px 5px 10px 0 pink - !important
+
+.html.html {
+    font-size: 16px;
+}
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: rgb(162, 159, 170);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 600px;
+    /* margin: 0 auto; */
+}
+
+h1 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 3rem;
+}
+
+#regexp {
+    
+    width: 100%;
+    height: 2.5rem;
+    
+}
+
+.input:hover {
+    border-color: gray;
+    box-shadow: 5px 5px 10px 0 pink;
+}
+
+.input:focus {
+    border-color: gray;
+    box-shadow: 5px 5px 10px 0 pink;
+}
+
+.sample {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.answer {
+    width: 6rem;
+    height: 2rem;
+    border: 2px solid palevioletred;
+    background-color: palevioletred;
+    border-radius: 5px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+}
+
+.answer:hover {
+    border-color: pink;
+    background-color: pink;
+    cursor: pointer;
+}
+
+.sample-input {
+    color: black;
+    flex-grow: 1;
+    border: 2px solid palevioletred;
+    outline: none;
+}
+
+.flex-cont {
+    display: none;
+    justify-content: center;
+}
+
+.flex-elem {
+    display: none;
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    margin: 5px;
+    text-align: center;
+}
+
+.input {
+    color: black;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 5px;
+    outline: none;
+    transition: box-shadow .5s;
+}
+
+.menu {
+    display: none; 
+    background-color: black;
+    widows: 40px;
+    height: 40px;
+    transition: all .5s;
+}
+
+
+.menu-show {
+    display: block;
+}
+
+
+.menu-animation {
+
+}
