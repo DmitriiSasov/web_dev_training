@@ -6,6 +6,22 @@ function start() {
     let buttons = document.querySelectorAll('.answer')
     let text_area_sizes = [text_area.clientHeight, text_area.clientWidth]
     
+    let hide_div_button = document.querySelector('#button')
+    let hidden_div = document.querySelector('.menu')
+    let page_space = document.querySelector('body')
+
+    page_space.addEventListener('click', event => {
+        if (!hidden_div.classList.contains('menu_hide')) {
+            hidden_div.classList.toggle('menu_hide')
+        }        
+    })
+
+
+    hide_div_button.addEventListener('click', event => {
+        hidden_div.classList.toggle('menu_hide')
+    })
+
+
     inputlist[0].addEventListener('input', event => {
         console.log(event.target.value)
 
